@@ -1,6 +1,6 @@
 from time import sleep
 inventory = []
-name = input("Hej, vad heter du? ")
+name = input("Hej, vad heter du? ").capitalize()
 greeting = "Välkommen till min värld [name]. Du vaknar upp efter en lång natts sömn..."
 greeting = greeting.replace("[name]", name)
 print(greeting)
@@ -22,7 +22,10 @@ elif "maskros" in choice:
     inventory.append("maskros")
 else:
     print("Stavning är inte din starka gren, du fortsätter...")
-print("Men se där...")
+print("Men se där, en akademisk Gnu galoppererar in från sidlinjen.\n Gnun brister ut i ett jovialt skratt!")
+message = "Hoho, jag är larvige Lasse, vem är du?\n Jag är [name], men jag vet inte vad som händer riktigt, jag är liksom en hamster!"
+print(message.replace("[name]", name))
+print("Meeen ååååhhh så spännande, utbrister Lasse")
 # testa ditt inventory
 # for item in inventory:
 #   print(item)
